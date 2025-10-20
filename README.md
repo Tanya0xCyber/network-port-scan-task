@@ -2,36 +2,33 @@
 
 
 
-## Objective (in simple words)
+## Objective :
 Find open ports and services on devices in the local network to see possible security risks.
 
-## Network Info (easy)
+## Network Info :
 - Active interface: **eth0**  
 - My IP: **192.168.153.134**  
 - Scanned range: **192.168.153.0/24**
 
 ---
 
-## Steps I followed (copyable commands)
+## Steps I followed:
 1. Install Nmap (if needed):
    ```bash
    sudo apt update
    sudo apt install -y nmap
-Confirm IP range:
-
-bash
-Copy code
+2. Confirm IP range: 
+```
 ifconfig
-Run the TCP SYN scan (main step):
-
-bash
-Copy code
+```
+3. Run the TCP SYN scan (main step):
+```
 sudo nmap -sS 192.168.153.0/24 -oN scan-results.txt
+```
 View results:
-
-bash
-Copy code
+```
 cat scan-results.txt
+```
 Example findings (replace with your real lines from scan-results.txt)
 IP Address	Open Ports	Service Example	Short Risk Note
 192.168.153.129	21, 22, 80	FTP, SSH, HTTP	May have weak/default passwords
