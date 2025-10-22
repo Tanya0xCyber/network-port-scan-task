@@ -1,5 +1,5 @@
-# Nmap 7.95 scan initiated Wed Oct 22 08:43:03 2025 as: /usr/lib/nmap/nmap -p- -sV -oN fullscan_host.txt 192.168.153.129
-Nmap scan report for 192.168.153.129
+# Nmap 7.95 scan initiated Wed Oct 22 08:43:03 2025 as: /usr/lib/nmap/nmap -p- -sV -oN fullscan_host.txt 192.168.x.x
+Nmap scan report for 192.168.x.x
 Host is up (0.0024s latency).
 Not shown: 65505 closed tcp ports (reset)
 PORT      STATE SERVICE     VERSION
@@ -33,7 +33,7 @@ PORT      STATE SERVICE     VERSION
 53975/tcp open  status      1 (RPC #100024)
 58036/tcp open  mountd      1-3 (RPC #100005)
 58513/tcp open  java-rmi    GNU Classpath grmiregistry
-MAC Address: 00:0C:29:2C:19:F9 (VMware)
+MAC Address: 00:0C:29:xx:xx:xx (VMware)
 Service Info: Hosts:  metasploitable.localdomain, irc.Metasploitable.LAN; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
