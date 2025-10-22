@@ -5,7 +5,7 @@ Find open ports and services on devices in a local/lab network to understand exp
 
 ## Tools
 - Nmap  
-- (Optional) Wireshark
+
 
 ---
 
@@ -31,18 +31,14 @@ sudo nmap -p- -sV 192.168.153.X -oN fullscan_host.txt
 
 ---
 
-## Quick definition
 
-**Port scan:** Ask a device which network ports (doors) are open so we know what services run.
-
----
 
 ## What I found :
 
 **Hosts discovered on subnet:** 5 hosts up (sanitized).
 **Target host:** `HOST-META` — `192.168.153.X` (sanitized).
 
-**Important open ports & services (sample):**
+**Important open ports & services :**
 
 * 21 — FTP (vsftpd 2.3.4)
 * 22 — SSH (OpenSSH 4.7p1)
@@ -68,7 +64,7 @@ sudo nmap -p- -sV 192.168.153.X -oN fullscan_host.txt
 
 ---
 
-## Top problems (simple)
+## Top problems :
 
 * Plaintext login services: **Telnet, rsh, rlogin, rexec**
 * Open file sharing / SMB (old versions)
@@ -90,5 +86,3 @@ sudo nmap -p- -sV 192.168.153.X -oN fullscan_host.txt
 ---
 
 
-```
-```
